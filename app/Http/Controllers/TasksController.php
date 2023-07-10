@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Http\Requests\LoginUserRequest;
 
 use Illuminate\Http\Request;
 
@@ -11,7 +12,9 @@ class TasksController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json([
+            'message' => 'Hello World!',
+        ]);
     }
 
     /**
